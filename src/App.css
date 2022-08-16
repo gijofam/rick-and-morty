@@ -1,0 +1,175 @@
+/* estylos del componente Padre --> APP */
+body{
+    padding: 0;
+    /* background-color: red; */
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    margin: 0;
+    background-color: 	rgb(30, 14, 21);
+    color: white;
+}
+
+h1,h2,h3,h4,ul{
+    margin: 0;
+    /* padding: 0.5em; */
+}
+.section-info{
+ width: 50vw;
+}
+.header{
+  background-image: url(../public/img/head.jpeg);
+  background-position: center ;
+  background-size: cover ;
+  background-attachment: fixed;
+  overflow: hidden;
+  width: 100vw;
+  /* width: 50vw; */
+  height: 100vh;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.header__form{
+  background-color: rgb(0, 0, 0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  border-radius: 15px;
+  width: auto;
+}
+.header__form--title{
+  font-family: 'Rubik Iso', cursive;
+  color: white;
+  font-size: 100px;
+  margin: 0;
+
+}
+.header__form__body{
+  display: flex;
+}
+.header__form--input,
+.header__form--btn{
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+/* estylos del componente LocationInfo */
+.location,
+.residents{
+  padding: 1em 0;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5em;
+    width: 100%; 
+    margin: 0;
+  }
+.card-info--title,
+.residents-title{
+  font-family: 'Rubik Iso', cursive;
+  font-weight: 800;
+
+}
+
+  .card-info__body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2em;
+    /* width: 300px;  */
+    flex-wrap: wrap;
+}
+span{
+  font-weight: 800;
+}
+
+/* .card-info__body--title,
+.card-info__body--dimension,
+.card-info__body--population{
+  font-size: 2rem;
+} */
+
+/* stilos del componente ResidentesInfo */
+.residents{
+  /* color: black; */
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: white;
+}
+.residents-title{
+  color: black;
+}
+.residents div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+
+
+.card-resident{
+ background-color: rgb(0,0,0,0.6);
+ border: 1px solid black;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ border-radius: 20px;
+}
+.card-resident__header{
+  position: relative;
+  /* width: 50%; */
+  /* display: flex; */
+  
+}
+.card-resident__header--img{
+  border-radius: 10px;
+  /* width: 50%; */
+}
+.card-resident__header--state{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background-color: rgb(0, 0, 0,0.7);
+  padding: 0.2em;
+  border-radius: 5px;
+  top: calc((100%/2));
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  
+}
+.card-resident__header--circle{
+  width: 1em;
+  height: 1em;
+  /* background-color: green; */
+  background-color: white;
+  border-radius: 50%;
+  /* margin: 0; */
+
+}
+.card-resident__header--status{
+  margin: 0;
+}
