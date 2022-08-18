@@ -45,8 +45,8 @@ function App() {
         <form className='header__form col s12 m12 l12 ' id='form' action="" onSubmit={getInputLocation}>
            <h1 className='header__form--title'>Rick and Morty</h1>
            <div className='header__form__body'>
-              <input className='size header__form--input'id='location' type="text" />
-              <button className='size header__form--btn'>Search</button>
+              <input className=' header__form--input'id='location' type="text" placeholder='search for id location'/>
+              <button className=' header__form--btn'>Search</button>
            </div>
         </form>
       </header>
