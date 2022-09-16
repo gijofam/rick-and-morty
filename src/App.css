@@ -70,7 +70,6 @@ h1,h2,h3,h4,ul{
 
 .header__form--input{
   color: white;
-
 }
 
 
@@ -122,7 +121,8 @@ span{
   justify-content: center;
   align-items: center;
   gap: 1em;
-  background-color: white;
+  width: 100%;
+  background-color: rgb(2, 56, 63);
   align-self: center;
 
   /* margin: 1em 0; */
@@ -132,13 +132,15 @@ span{
   align-self: center;
 }
 .residents-title{
+  color: white;
   color: black;
+  text-shadow: 0px 3px 5px white;
 }
 .residents div{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   flex-wrap: wrap;
 }
 
@@ -146,18 +148,21 @@ span{
 
 .card-resident{
  background-color: rgb(0,0,0,0.6);
- border: 1px solid black;
+ /* border: 1px solid black; */
+ /* box-shadow: 5px 5px 20px green; */
  border-radius: 10px;
  display: flex;
  flex-direction: column;
  align-items: center;
  border-radius: 20px;
+ transition: transform 500ms ease;
+}
+.card-resident:hover{
+  transform: scale(1.05);
 }
 .card-resident__header{
   position: relative;
-  /* width: 50%; */
-  /* display: flex; */
-  
+
 }
 .card-resident__header--img{
   border-radius: 10px;
